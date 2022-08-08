@@ -16,7 +16,7 @@
   "author": "huanjin.liu@foxmail.com",
   "license": "ISC",
   "lint-staged": {
-    "*.{ts}": "eslint --fix"
+    "*.ts": "eslint --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
