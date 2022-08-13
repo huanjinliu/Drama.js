@@ -1,0 +1,28 @@
+
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+
+      - name: Install pnpm And Install dependencies
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6
+          run_install: true
+
+      - name: Running Lint
+        run: npx lint-staged
