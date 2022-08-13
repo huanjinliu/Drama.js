@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
+    'import/no-extraneous-dependencies': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',

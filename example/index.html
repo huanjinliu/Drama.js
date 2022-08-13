@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drama.js运用示例合集</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 500px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .container h1 {
+      color: #333;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .container p {
+      font-size: 12px;
+      color: rgb(235, 137, 137);
+      opacity: 0.6;
+    }
+
+    .container .list {
+      padding: 28px 0;
+      display: flex;
+      gap: 10px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .list>a {
+      text-decoration: unset;
+      font-size: 14px;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-weight: bold;
+      color: rgb(235, 137, 137);
+      border: 1px solid currentColor;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .list>a:hover {
+      color: rgb(207, 106, 106);
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .15);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Drama.js运用示例合集</h1>
+    <p>tips: 点击按钮进入对应算法可视化页面</p>
+    <div class="list">
+      <a href="./bubble-sort/index.html" target="_block">冒泡排序</a>
+      <a href="./quick-sort/index.html" target="_block">快速排序</a>
+    </div>
+  </div>
+  <!-- 引入是为了实现该html的热更新，实际上不再该页面实现示例 -->
+  <script src="../dist/drama.js"></script>
+</body>
+
+</html>
