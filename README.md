@@ -12,12 +12,13 @@ Drama.js 是一个用于开发算法可视化的工具库，其核心就是按�
 
 `npm start`实际上运行的是`npm run dev`，也就是`npm link && drama list`命令。`npm link` 是为了注册项目的命令行工具——drama，以便于后续开发。
 
-这个命令行工具(v0.1.0)内只有两个命令：
+这个命令行工具(v0.1.0)内有以下命令：
 
 | 命令  | 参数   | 描述                              |
 | ----- | ------ | --------------------------------- |
 | list  | -      | 打开使用 Drama 开发的示例集合网页 |
-| start | <name> | 开发特定示例网页                  |
+| start | [name] | 开启特定示例服务                  |
+| init | <name> | 初始新示例                  |
 
 如：`drama start bubble-sort` —— 打开 example 文件夹下 bubble-sort 网站示例
 
