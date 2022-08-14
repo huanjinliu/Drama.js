@@ -19,7 +19,8 @@ export default () => {
       format: 'umd',
       // cdn方式引入时挂载在window上面用的就是这个名字
       name: 'drama',
-      // sourcemap: true,
+      // 是否打包sourceMap
+      sourcemap: process.env.DRAMA_DEV_PATH !== undefined,
     },
     plugins: [
       // 清除原打包文件
@@ -58,7 +59,7 @@ export default () => {
         open: true,
         openPage: path.join('/', process.env.DRAMA_DEV_PATH),
         port: 8080,
-        verbose: false,
+        // verbose: false,
       }),
       // 当目录中的文件发生变化时，刷新页面
       livereload({

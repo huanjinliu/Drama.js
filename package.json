@@ -2,12 +2,11 @@
   "name": "drama.js",
   "version": "1.0.0",
   "description": "Use JavaScript to make code play a drama for you :)",
-  "main": "drama.js",
+  "main": "./dist/drama.js",
   "scripts": {
     "start": "npm run dev",
     "dev": "npm link && drama list",
-    "build:types": "tsc",
-    "build": "npm run build:types && rollup --config",
+    "build": "tsc && rollup --config",
     "prepare": "husky install",
     "prettier": "prettier --write ."
   },

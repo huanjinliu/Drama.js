@@ -11,6 +11,11 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
+    '@typescript-eslint/no-unused-vars': [2],
+    'no-shadow': 'off',
+    'no-underscore-dangle': 'off',
+    'no-loop-func': 'off',
+    'no-plusplus': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/extensions': [
       'error',
