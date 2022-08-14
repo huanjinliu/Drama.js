@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>快速排序</title>
+  <script src="./fabric.min.js"></script>
+  <script src="../../dist/drama.js"></script>
+  <style>
+    .buttons {
+      padding: 10px 0;
+    }
+
+    .buttons>button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="buttons">
+    <button onclick="$drama?.play()">播放</button>
+    <button onclick="$drama?.play(1)">下一步</button>
+    <button onclick="$drama?.stop()">暂停</button>
+    <button onclick="changeSpeed(1)">加速</button>
+    <span id="speed">1.00</span>
+    <button onclick="changeSpeed($drama.speed > 1 ? -1 : -0.2)">减速</button>
+    <button onclick="addRandomNumber()">添加随机数字</button>
+    <button onclick="randomNumber()">打乱数字</button>
+  </div>
+  <canvas id="canvas"></canvas>
+  <script>
+    function changeSpeed(d) {
+      if ($drama) {
+        $drama.speed = $drama.speed + d;
+        document.querySelector('#speed').innerHTML = $drama.speed.toFixed(2);
+      }
+    }
+    function addRandomNumber() {
+      const number = -10 + Math.floor(Math.random() * 30);
+      addNumber(number);
+    }
+  </script>
+  <script src="./index.js" type="module"></script>
+</body>
+
+</html>
