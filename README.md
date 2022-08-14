@@ -17,8 +17,8 @@ Drama.js 是一个用于开发算法可视化的工具库，其核心就是按�
 | 命令  | 参数   | 描述                              |
 | ----- | ------ | --------------------------------- |
 | list  | -      | 打开使用 Drama 开发的示例集合网页 |
-| start | [name] | 开启特定示例服务                  |
-| init | <name> | 初始新示例                  |
+| start | name | 开启特定示例服务                  |
+| init | name | 初始新示例                  |
 
 如：`drama start bubble-sort` —— 打开 example 文件夹下 bubble-sort 网站示例
 
